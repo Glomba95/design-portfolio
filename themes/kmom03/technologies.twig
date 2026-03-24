@@ -1,0 +1,22 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="content landingpage">
+            {{ content }}
+
+            {% for tech in meta.Techs %}
+                <a href="{{ base_url }}/technology/sub/{{ tech.class }}"
+                    class="box {{ tech.class }}">
+                        <p>{{ tech.name }}</p>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

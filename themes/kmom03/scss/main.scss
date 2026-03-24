@@ -1,0 +1,127 @@
+body {
+    background-color: $background-color;
+}
+
+* {
+    color: $font-color;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+// ─── Header ──────────────────────────────────────────────────────────────────
+
+.header {
+    background-color: $color1;
+    width: 100%;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: $magic-number;
+    min-height: 200px;
+    height: auto;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-left: $magic-number;
+}
+
+.logo img {
+    max-width: 10rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title {
+    display: inline-block;
+}
+
+
+// ─── Nav ─────────────────────────────────────────────────────────────────────
+
+.nav {
+    background-color: $color2;
+}
+
+.nav ul {
+    margin: 0;
+    padding-right: $magic-number;
+    min-height: 75px;
+}
+
+.nav a {
+    color: $font-alternative-color;
+    text-decoration: none;
+}
+
+
+// ─── Main ────────────────────────────────────────────────────────────────────
+
+
+.content {
+    background-color: $background-color;
+    margin: 0 auto;
+    padding: $magic-number $magic-number * 3;
+    padding-bottom: $magic-number * 3;
+    width: 1100px;
+    max-width: 100%;
+    min-height: 500px;
+    color: $font-color;
+    border-left: 2px solid $color3;
+    border-right: 2px solid $color3;
+}
+
+
+// ─── Footer ──────────────────────────────────────────────────────────────────
+
+.footer {
+    background-color: $color2;
+    width: 100%;
+    min-height: 125px;
+    display: flex;
+}
+
+.footer-content {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    color: $font-alternative-color;
+    display: flex;
+}
+
+.footer-content .social {
+    justify-self: center;
+}
+
+.footer-content .social i {
+    color: $font-alternative-color;
+    font-size: 24px;
+}
+
+
+// ─── Responsive ──────────────────────────────────────────────────────────────
+
+@media (max-width: 768px) {
+    .header {
+        min-height: auto;
+    }
+    .title-wrapper {
+        margin-left: calc($magic-number / 2);
+    }
+
+    .content {
+        border: none;
+    }
+}

@@ -1,0 +1,68 @@
+.slide {
+    overflow-y: hidden !important;
+    transition: height 0.5s ease-in !important;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.nav ul li {
+    padding: 0 1em;
+}
+
+.nav a, .nav-toggle {
+    color: #333;
+}
+
+.nav .hidden {
+    display: none;
+}
+
+.nav-toggle {
+    display: none;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+}
+
+@media (max-width: 767px) {
+    /* .header {
+        flex-direction: column;
+    } */
+
+    /* .nav {
+        display: none;
+    } */
+
+    .nav ul {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .js .nav-toggle {
+        display: block;
+        /* float: right; */
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+}

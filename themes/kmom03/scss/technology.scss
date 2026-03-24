@@ -1,0 +1,50 @@
+.landingpage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $magic-number $magic-number; 
+}
+
+.landingpage h1 {
+    grid-column: span 3;
+    justify-self: center;
+    margin-bottom: calc($magic-number / 2);
+}
+
+.box {
+    grid-column: span 1;
+    background-color: rgba(13, 13, 13, 0.1);
+    backdrop-filter: blur(5px);
+    padding: $magic-number;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid $black-trans;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.git, .html, .python {
+    grid-column: span 2;
+}
+
+.sqlite {
+    grid-column: span 3;
+}
+
+@media (max-width: 768px) {
+    .landingpage {
+        grid-template-columns: 1fr;
+    }
+
+    .landingpage h1 {
+        grid-column: span 1;
+    }
+
+    .git, 
+    .html, 
+    .python,
+    .sqlite {
+        grid-column: span 1;
+    }
+}

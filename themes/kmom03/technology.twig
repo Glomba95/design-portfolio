@@ -1,0 +1,33 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="subpage">
+            <aside class="sidebar">
+                <ul>
+                    {% for page in pages("technology/sub") if not page.hidden %}
+                    <li>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </aside>
+
+            <div class="content">
+                <a class="return" href="{{ base_url }}/technology">
+                    <i class="fa fa-arrow-left fa-xl" aria-hidden="true"></i>
+                    <span class="sr-only">Return</span>
+                </a>
+                <article class="article">
+                    {{ content }}
+                </article>
+            </div>
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
