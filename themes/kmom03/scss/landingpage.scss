@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .landingpage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7,28 +9,31 @@
 .landingpage h1 {
     grid-column: span 3;
     justify-self: center;
-    margin-bottom: calc($magic-number / 2);
+    margin-bottom: calc($magic-number / 1);
 }
 
 .box {
     grid-column: span 1;
-    background-color: rgba(13, 13, 13, 0.1);
+    background-color: $accent-trans-color;
     backdrop-filter: blur(5px);
     padding: $magic-number;
     text-align: center;
     text-decoration: none;
-    border: 1px solid $black-trans;
 }
 
 .box:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.git, .html, .python {
+.git, 
+.html, 
+.python, 
+.load {
     grid-column: span 2;
 }
 
-.sqlite {
+.sqlite,
+.design-principles {
     grid-column: span 3;
 }
 
@@ -44,7 +49,9 @@
     .git, 
     .html, 
     .python,
-    .sqlite {
+    .sqlite,
+    .load,
+    .design-principles {
         grid-column: span 1;
     }
 }

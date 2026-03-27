@@ -1,0 +1,79 @@
+@use 'variables' as * with (
+    // $accent-color: #E0DB94,
+    $font-color: #F0F0F0,
+    $font-alternative-color: #0D0D0D,
+    $accent-color: #D9E38C,
+    $accent-alternative-color: #383838,
+    $accent-trans-color: rgba(13, 13, 13, 0.1),
+    $background-color: #2E2E2E,
+    $background-alternative-color: #383838
+    // $font-alternative-color: #E0DB94,
+);
+
+@use 'main';
+@use 'typography';
+@use 'landingpage';
+@use 'subpage';
+@use 'blockquotes';
+@use 'code';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import '../../node_modules/normalize.css/normalize';
+// @use url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+.header {
+    background-color: $background-color;
+}
+
+.site-header {
+    border: 0;
+    padding-bottom: calc($magic-number / 2);
+}
+
+.site-header .title h1 {
+    color: $accent-color;
+    // margin-top: calc($magic-number / 4);
+}
+
+.nav a {
+    color: $font-color;
+}
+
+.fa-times {
+    color: $font-color;
+}
+
+.fa-times:hover,
+.fa-bars:hover {
+    color: $accent-color;
+}
+
+.content {
+    border: 0px;
+}
+
+code {
+    border-color: $accent-trans-color;
+    background-color: $accent-color;
+    color: $font-alternative-color;
+}
+
+code strong {
+    color: white;
+}
+
+.footer {
+    background-color: $background-alternative-color;
+}
+
+.footer-content {
+    color: $font-color;
+}
+
+.footer-content .social i {
+    color: $font-color;
+}

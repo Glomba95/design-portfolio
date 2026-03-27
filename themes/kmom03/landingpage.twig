@@ -1,0 +1,22 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="content landingpage">
+            {{ content }}
+
+            {% for report in meta.Reports %}
+                <a href="{{ base_url }}/analysis/sub/{{ report.page }}"
+                    class="box {{ report.class }}">
+                        <p>{{ report.name }}</p>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

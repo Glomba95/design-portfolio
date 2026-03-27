@@ -1,4 +1,4 @@
-.slide {
+/* .slide {
     overflow-y: hidden !important;
     transition: height 0.5s ease-in !important;
 }
@@ -31,14 +31,6 @@
 }
 
 @media (max-width: 767px) {
-    /* .header {
-        flex-direction: column;
-    } */
-
-    /* .nav {
-        display: none;
-    } */
-
     .nav ul {
         flex-direction: column;
         padding-bottom: 1em;
@@ -65,4 +57,4 @@
         text-align: center;
         cursor: pointer;
     }
-}
+} */

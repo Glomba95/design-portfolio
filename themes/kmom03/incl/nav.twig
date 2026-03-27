@@ -1,19 +1,13 @@
 <div class="header" role="banner">
     <div class="site-header">
-        <div class="title-wrapper">
-            {% if pages["_meta"].meta.logo %}
-            <div class="logo">
-                <a href="{{ base_url }}">
-                    <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
-                </a>
-            </div>
-            {% endif %}
-            <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
-                <a href="{{ base_url }}">
-                    <h1>{{ site_title }}</h1>
-                    {{ pages["_meta"].meta.tagline|markdown }}
-                </a>
-            </div>
+        <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
+            <a href="{{ base_url }}">
+                <h1>
+                    <span class="title-row-1">Ebba</span>
+                    <span class="title-row-2">Amnehagen</span>
+                </h1>
+                {# <h2>{{ pages["_meta"].meta.tagline|markdown }}</h2> #}
+            </a>
         </div>
 
         <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav"
