@@ -6,6 +6,7 @@
 @use 'subpage';
 @use 'blockquotes';
 @use 'code';
+@use 'columns';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';

@@ -16,6 +16,7 @@
 @use 'subpage';
 @use 'blockquotes';
 @use 'code';
+@use 'columns';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -64,6 +65,14 @@ code {
 
 code strong {
     color: white;
+}
+
+.color-palette td {
+    border: 1px solid black;
+}
+
+.color-light {
+    border: 1px solid transparent;
 }
 
 .footer {

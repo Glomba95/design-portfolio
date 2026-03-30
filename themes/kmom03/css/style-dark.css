@@ -258,35 +258,43 @@ h4,
 h5,
 h6 {
   font-family: "Red Hat Display", sans-serif;
-  margin-top: 3.92rem;
-  margin-bottom: 1.96rem;
+  margin-top: 2.94rem;
+  margin-bottom: 0.98rem;
   text-align: center;
 }
 
 h1 {
   margin-bottom: 1.96rem;
-  font-size: 3rem;
-  line-height: 1.1;
+  font-size: 4rem;
+}
+
+.content h1 {
+  margin-top: 3.92rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 2rem;
+  font-weight: 500;
 }
 
 h4 {
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 h5 {
   font-size: 1.25rem;
+  font-weight: 500;
 }
 
 h6 {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 p,
@@ -387,12 +395,12 @@ li {
   flex-direction: column;
   width: 15%;
   margin-left: 10%;
-  border-right: 3px solid #383838;
 }
 
 .sidebar ul {
   margin-top: 3.92rem;
   padding-left: 0;
+  border-right: 3px solid #383838;
 }
 
 .sidebar li {
@@ -424,7 +432,7 @@ li {
 
 .return {
   position: absolute;
-  top: 2.94rem;
+  top: 3.92rem;
   left: 5.88rem;
   display: inline-block;
 }
@@ -450,12 +458,20 @@ blockquote {
   font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
-  border-left: 0.5em solid #f5f5f5;
+  border-left: 0.2em solid #D9E38C;
 }
 
 table {
   margin-top: 1.96rem;
   margin-bottom: 1.96rem;
+}
+
+hr {
+  color: #383838;
+}
+
+.max-width {
+  max-width: 100%;
 }
 
 code {
@@ -488,6 +504,83 @@ pre code {
   line-height: 1.4;
 }
 
+.columns-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.column {
+  grid-column: span 1;
+  padding: 0 0.98rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.column h4 {
+  margin-top: 0.98rem;
+}
+
+.color-palette {
+  margin: 0.98rem 0;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+.color-palette td {
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  padding: 0;
+}
+
+.color-palette td::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.color-palette th {
+  padding: 6px 0;
+}
+
+.color-light {
+  border: 1px solid #ccc;
+}
+
+.color-gradient {
+  background: linear-gradient(90deg, #af2896, #509bf5);
+}
+
+.details-container {
+  margin: 2.94rem 0;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  margin: 0.98rem 0;
+}
+
+summary span {
+  padding-right: 0.98rem;
+}
+
+summary h4 {
+  padding: 0.98rem 0;
+  line-height: 1;
+  text-align: left;
+  display: inline;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .column {
+    grid-column: span 3;
+  }
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6949,6 +7042,14 @@ code {
 
 code strong {
   color: white;
+}
+
+.color-palette td {
+  border: 1px solid black;
+}
+
+.color-light {
+  border: 1px solid transparent;
 }
 
 .footer {

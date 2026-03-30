@@ -13,12 +13,12 @@
     flex-direction: column;
     width: 15%;
     margin-left: 10%;
-    border-right: 3px solid $accent-alternative-color;
 }
 
 .sidebar ul {
     margin-top: calc($magic-number * 2);
     padding-left: 0;
+    border-right: 3px solid $accent-alternative-color;
 }
 
 .sidebar li {
@@ -53,7 +53,7 @@
 
 .return {
     position: absolute;
-    top: calc($magic-number * 1.5);
+    top: calc($magic-number * 2);
     left: calc($magic-number * 3);
     display: inline-block;
 }

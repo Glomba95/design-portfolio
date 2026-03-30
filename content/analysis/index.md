@@ -1,5 +1,5 @@
 ---
-Title: Analyser
+Title: Analysis
 Description: Analysiser av design.
 Template: landingpage
 Reports:
