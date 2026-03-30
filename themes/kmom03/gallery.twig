@@ -1,0 +1,30 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="content">
+            {{ content }}
+
+            <div class="gallery">
+            {% for gimg in meta.Galleryimgs %}
+                <a class ="galleryimg {{ gimg.name }}" href="{{ base_url }}/image/{{ gimg.file }}?save-as=jpg" target="_blank">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="{{ base_url }}/image/{{ gimg.file }}?w=668&save-as=jpg">
+                        <img src="{{ base_url }}/image/{{ gimg.file }}?save-as=jpg" alt="TV as Pixel art">
+                    </picture>
+                </a>
+            {% endfor %}
+            </div>
+            <hr>
+            <div class="embed-container">
+                <iframe src="https://www.youtube.com/embed/qk00gbDwGqM?si=aJ2jevGOKvZjbEhf" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

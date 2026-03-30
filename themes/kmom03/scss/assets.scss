@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+.max-width {
+    max-width: 100%;
+}
+
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+img:not([alt]) {
+    outline: 4px red dashed !important;
+}

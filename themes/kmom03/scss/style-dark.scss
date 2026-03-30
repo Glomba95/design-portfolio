@@ -17,6 +17,8 @@
 @use 'blockquotes';
 @use 'code';
 @use 'columns';
+@use 'assets';
+@use 'gallery';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
