@@ -275,6 +275,7 @@ h1 {
 h2 {
   font-size: 2.3rem;
   font-weight: 600;
+  margin-bottom: 2.94rem;
 }
 
 h3 {
@@ -503,11 +504,17 @@ pre code {
 .columns-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2.94rem;
+  padding: 0.98rem;
+}
+
+.container-border {
+  border: 3px solid #ffffff;
 }
 
 .column {
   grid-column: span 1;
-  padding: 0 0.98rem;
+  padding: 0 0.6533333333rem;
   display: flex;
   flex-direction: column;
 }

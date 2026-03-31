@@ -3,11 +3,17 @@
 .columns-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: calc($magic-number * 1.5);
+    padding: calc($magic-number / 2)
+}
+
+.container-border {
+    border: 3px solid #ffffff;    
 }
 
 .column {
     grid-column: span 1;
-    padding: 0 0.98rem;
+    padding: 0 calc($magic-number / 3);
     display: flex;
     flex-direction: column;
 }

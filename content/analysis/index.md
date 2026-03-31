@@ -1,7 +1,7 @@
 ---
 Title: Analysis
 Description: Analysiser av design.
-Template: landingpage
+Template: analyses
 Reports:
     - name: Colors
       page: 01-colors

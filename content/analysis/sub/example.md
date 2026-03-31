@@ -61,13 +61,23 @@ Skriv ditt eget namn samt vilka gruppmedlemmar som deltog i att författa rappor
 Strukturen är inte absolut nödvändig, se den som en möjlighet att träna på god struktur av rapportskrivning.
 
 ## Krav
-1. Välj ut 3 webbplatser som skall analyseras, berätta hur du gjorde urvalet (urval). Tänk att ditt urval påverkar vad du kan komma fram till i din rapport. Gör ditt urval från en kategori av webbplatser, eller välj helt olika kategorier för att jämföra.
-2. Berätta om du använde något särskilt verktyg för att göra färganalysen (metod). Berätta dessutom hur du gick till väga när du använde verktyget.
-3. För varje webbplats, gör följande (resultat):
-    1. Ta en snapshot (bild) på webbplats.
-    2. Dokumentera och visualisera färgpaletten som används.
-    3. Notera vilken typ av färgschema som använts.
-    4. Notera val av typsnitt för H1-H3 samt brödtext.
-    5. Notera i en mening om du anser att webbplatsens färgval och typografi motsvarar den profil du tror att webbplatsen vill ha.
-4. Skriv ett stycke om dina samlade intryck från resultatet, finns det något värt att nämna, diskutera, att analysera (analys), fick du fram något bra med din studie?
-5. I slutet av rapporten skriver du ett eget stycke med namnen på dina gruppmedlemmar.
+1. Välj ut 3 webbplatser som skall analyseras, berätta hur du gjorde urvalet.
+
+2. Beskriv vilka verktyg du använde och hur du utförde arbetet för att samla in dina mätvärden. Det blir en kort beskrivning av din metod.
+
+3. Skapa ett Excel-ark, till exempel Google Kalkylark, för att spara dina mätningar i. För allt du nu skall mäta, dokumentera det i Excel-arket. Länka till ditt Excel-ark så man ser rådatan.
+    - Embedda din data i din analys. För att göra detta på Google Sheets trycker du på “File -> Publish to the web -> Embed”. Lägg en klass på din iframe och ändra bredden/höjden så det passar din analys.
+
+4. För varje webbplats, gör följande:
+    1. Ta en snapshot (bild) på webbplatsen.
+    2. Välj ut tre sidor (bifoga länkarna) som skall mätas med Google Pagespeed. Mät på både Mobile och Desktop. Notera de betyg som ges.
+    3. För varje sida, mät med devtools flik networks och notera sidans laddningstid tillsammans med antalet resurser som laddas samt sidans totala storlek. För varje sida gör mätningen tre gånger och ta snittet av mätvärdena.
+    4. Diskutera och skriv en mening om hur webbplatsen kan förbättra sig.
+5. Sammanfatta ditt resultat i en analys och skriv om vilka de vanligaste förbättringsåtgärderna verkar vara för ditt urval av webbplatser.
+
+6. Rangordna dina webbplatser baserat på deras mätvärden och utse en vinnare i testet och kommentera resultatet.
+
+7. Bestäm en gräns för absolut laddningstid som du själv uppfattar som snabb eller långsam webbplats. Skriv en mening om hur ditt urval av webbplatser klarar ditt gränsvärde och hur du upplever webbplatsernas snabbhet, rent generellt, i ditt urval.
+
+8. I slutet av rapporten skriver du ett eget stycke med namnen på dina gruppmedlemmar.
+

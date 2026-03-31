@@ -17,4 +17,6 @@ desktop.ini
 # NPM
 themes/node_modules/
 
+assets/img/backup/
+
 note.txt
